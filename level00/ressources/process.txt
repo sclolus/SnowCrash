@@ -1,0 +1,7 @@
+Check the most recent changes on the filesystem, something like: ls -lR /rofs | grep 2016.
+
+find /usr/sbin/john which belongs to level00
+
+cat it to find: cdiiddwpgswtgt
+Eventually try to rot it by all numbers: http://theblob.org/rot.cgi?text=cdiiddwpgswtgt
+got the flag: nottoohardhere
