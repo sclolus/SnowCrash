@@ -1,0 +1,2 @@
+Found that /etc/passwd contained a hashed password entry for flag01.
+cracked it with john the ripper: got abcdefg
