@@ -1,0 +1,9 @@
+install wireshark
+tshark -r level02.pcap -V
+
+found password request.
+
+Reconstructed it without the 7f bytes (DEL), got: ft_waNDReL0L
+su flag02
+getflag
+kooda2puivaav1idi4f57q8iq
