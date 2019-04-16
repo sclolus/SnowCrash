@@ -1,0 +1,13 @@
+Saw a port '4747' in the perl script.
+CGI stand for Common Gateway interface.
+Tried to connect via http to my vm IP:4747 on my browser.
+Got default page.
+perl -w ./level04 reports uninitialized variable at line 7. Which is $y = $_[0];
+
+This line tries to retrieve the first parameter of the function x.
+Which is param("x");
+param in CGI module of perl retrivies the value of a key-value pair 'key=value' from an http form.
+So I tried doing this : http://10.11.200.68:4747/?x=`getflag`
+which returned me the flag.
+Check flag.Here is your token : ne2searoevaevoem4ov4ar8ap
+
