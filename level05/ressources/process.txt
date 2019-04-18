@@ -1,0 +1,10 @@
+in /var/mail/level05 there is : '*/2 * * * * su -c "sh /usr/sbin/openarenaserver" - flag05'
+
+Which is the format of a crontrab.
+there is /etc/apache2/sites-enabled/level05.conf, I've got a reverse shell on it since it's the same server as level04 however I can't seem to getflag on it.
+
+there is /usr/sbin/openarenaserver that is a script that execute in the /opt/openarenaserver which is writable for me. so
+'echo 'getflag > /var/crash/flag' > /opt/openarenaserver/getflag.sh'
+
+As the crontab rule is defined every two minutes /usr/sbin/openarenaserver is called.
+So after around 2 minutes, I got the flag in /var/crash/flag : viuaaale9huek52boumoomioc
