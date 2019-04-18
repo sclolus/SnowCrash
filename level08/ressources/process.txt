@@ -18,3 +18,9 @@ so:
 level08@SnowCrash:~$ mv token lel
 level08@SnowCrash:~$ ./level08 lel
 quif5eloekouj29ke0vouxean
+
+After trying to su level09, which failed.
+we tried to su flag08 with this token.
+It was the password.
+getflag:
+25749xKZ8L7DkSCwJkT9dyv6f
