@@ -1,0 +1,53 @@
+level09@SnowCrash:~$ ./level09
+You need to provied only one arg.
+level09@SnowCrash:~$ ./level09  adf
+aeh
+level09@SnowCrash:~$ ./level09  asdf
+atfi
+level09@SnowCrash:~$ ./level09  salut
+sbnxx
+level09@SnowCrash:~$ ./level09  sty
+su{
+level09@SnowCrash:~$ ./level09  sw
+sx
+level09@SnowCrash:~$ ./level09  sz
+s{
+level09@SnowCrash:~$ ./level09  sy
+sz
+level09@SnowCrash:~$ man ascii
+level09@SnowCrash:~$ ./level09  sy^C
+level09@SnowCrash:~$ ./level09  sza
+s{c
+level09@SnowCrash:~$ ./level09  szaa
+s{cd
+level09@SnowCrash:~$ ./level09  szaaa
+s{cde
+level09@SnowCrash:~$ ./level09  szaaaa
+s{cdef
+level09@SnowCrash:~$ ./level09  szaaaaa
+s{cdefg
+level09@SnowCrash:~$ ./level09  szaaaaaa
+s{cdefgh
+level09@SnowCrash:~$ ./level09  szaaaaaaa
+s{cdefghi
+level09@SnowCrash:~$ ./level09  szaaaaaaaa
+s{cdefghij
+level09@SnowCrash:~$ ./level09  szaaaaaaaaa
+s{cdefghijk
+level09@SnowCrash:~$ ./level09  szaaaaaaaaaa
+s{cdefghijkl
+level09@SnowCrash:~$ ./level09  szaaaaaaaaaaa
+s{cdefghijklm
+level09@SnowCrash:~$ ./level09  szaaaaaaaaaaaa
+s{cdefghijklmn
+level09@SnowCrash:~$ ./level09  szaaaaaaaaaaaaa
+s{cdefghijklmno
+level09@SnowCrash:~$ ls
+level09  token
+
+It looks like a rotn with n depending on the position of the char in the string.
+
+wrote main.c
+
+reversed the content of token with it.
+got : s5cAJpM8ev6XHw998pRWG728z
