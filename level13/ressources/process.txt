@@ -1,0 +1,5 @@
+The program uses getuid to check the current uid.
+We simply used gdb to bypass the check.
+The token is stored in a DES string.
+The function ft_des is called with it as a parameter in order to decipher it.
+the token is : 2A31L79asukciNyi8uppkEuSx
