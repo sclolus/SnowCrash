@@ -3,3 +3,34 @@ We simply used gdb to bypass the check.
 The token is stored in a DES string.
 The function ft_des is called with it as a parameter in order to decipher it.
 the token is : 2A31L79asukciNyi8uppkEuSx
+
+0804858c <main>:
+ 804858c:       55                      push   ebp
+ 804858d:       89 e5                   mov    ebp,esp
+ 804858f:       83 e4 f0                and    esp,0xfffffff0
+ 8048592:       83 ec 10                sub    esp,0x10 ;;jump from here
+
+set $eip = 80485cb
+step
+
+ 8048595:       e8 e6 fd ff ff          call   8048380 <getuid@plt>
+ 804859a:       3d 92 10 00 00          cmp    eax,0x1092
+ 804859f:       74 2a                   je     80485cb <main+0x3f>
+ 80485a1:       e8 da fd ff ff          call   8048380 <getuid@plt>
+ 80485a6:       ba c8 86 04 08          mov    edx,0x80486c8
+ 80485ab:       c7 44 24 08 92 10 00    mov    DWORD PTR [esp+0x8],0x1092
+ 80485b2:       00 
+ 80485b3:       89 44 24 04             mov    DWORD PTR [esp+0x4],eax
+ 80485b7:       89 14 24                mov    DWORD PTR [esp],edx
+ 80485ba:       e8 a1 fd ff ff          call   8048360 <printf@plt>
+ 80485bf:       c7 04 24 01 00 00 00    mov    DWORD PTR [esp],0x1
+ 80485c6:       e8 d5 fd ff ff          call   80483a0 <exit@plt>
+ 80485cb:       c7 04 24 ef 86 04 08    mov    DWORD PTR [esp],0x80486ef ;;to here
+ 80485d2:       e8 9d fe ff ff          call   8048474 <ft_des>
+ 80485d7:       ba 09 87 04 08          mov    edx,0x8048709
+ 80485dc:       89 44 24 04             mov    DWORD PTR [esp+0x4],eax
+ 80485e0:       89 14 24                mov    DWORD PTR [esp],edx
+ 80485e3:       e8 78 fd ff ff          call   8048360 <printf@plt>
+ 80485e8:       c9                      leave  
+ 80485e9:       c3                      ret    
+ 
