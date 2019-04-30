@@ -1,0 +1,5 @@
+found a '/e' in the first preg_replace call.
+Since the regexp matches things of the form [x whatever], and with the "y(\"\\2\")" it will evaluate the whatever and expand it to the result.
+So we can use variable expansion to do [x {${system(sh)}}], to get a shell from the program.
+We just have to use the compiled version of the php script and we can a SUID shell.
+
